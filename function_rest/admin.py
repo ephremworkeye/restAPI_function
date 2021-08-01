@@ -9,5 +9,5 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Movie)
 class MovieAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'max_length', 'revenue')
+    list_display = ('title', 'slug', 'max_length', 'revenue','category')
     prepopulated_fields = {'slug': ('title',)}
